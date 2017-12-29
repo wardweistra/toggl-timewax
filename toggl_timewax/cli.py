@@ -239,7 +239,7 @@ def generate_config(**kwargs):
     n_days = input(u'Number of days (INT) in the past to synchronize (default 9): ')
     if n_days:
         try:
-            data['n_days'] = n_days
+            data['n_days'] = int(n_days)
         except ValueError:
             logger.error(u'Has to be integer. Not saving n_days.')
 
