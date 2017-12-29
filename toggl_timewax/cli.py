@@ -145,9 +145,11 @@ _global_test_options = [
     click.option('-p', '--timewax-password', type=str,
                  help='Your timewax password.'),
     click.option('-c', '--timewax-client', type=str,
-                 help='Your timewax client (company) name.'),
+                 help='Your timewax client (company) name. See ' +
+                      'https://support.timewax.com/hc/nl/articles/203495906-authentication-token-get' +
+                      ' how to find the Client name.'),
     click.option('-k', '--toggl-key', type=str,
-                 help='Your toggl api key.'),
+                 help='Your toggl api key. Found at https://toggl.com/app/profile.'),
     click.option('-w', '--workspace-name', type=str,
                  help='A name to match your available workspaces against. ' +
                       'The first one encountered will be picked. ' +
